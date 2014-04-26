@@ -94,16 +94,26 @@ public function bookingAction()
 }
 ```
 
-Booker Service has following methods:
-* ``` isAvailableForPeriod($item, \DateTime $start, \DateTime $end) ``` Checks is your item available for period,
+Booker Service has following methods: ``` isAvailableForPeriod($item, \DateTime $start, \DateTime $end) ``` Checks is your item available for period,
 returns ```boolean```
-* ``` isAvailableForDate($item, \DateTime $date) ``` Checks is your item available for date, returns ```boolean```
-* ``` whereAvailableForPeriod(QueryBuilder $queryBuilder, $join, \DateTime $start, \DateTime $end)``` Updates your
-```QueryBuilder``` and returns the same ```QueryBuilder``` object with added join and where clause.
-> Note: ```$join``` is ```array('field', 'alias')```
-* ``` whereAvailableForDate(QueryBuilder $queryBuilder, $join, \DateTime $date)``` Updates your
-```QueryBuilder``` and returns the same ```QueryBuilder``` object with added join and where clause.
-> Note: ```$join``` is ```array('field', 'alias')```
-* ``` book($item, \DateTime $start, \DateTime $end) ``` Books your item returns ```Entity | false``` (```Entity```
-on success, ```false``` on failure)
 
+---
+
+``` isAvailableForDate($item, \DateTime $date) ``` Checks is your item available for date, returns ```boolean```
+
+---
+
+``` whereAvailableForPeriod(QueryBuilder $queryBuilder, $join, \DateTime $start, \DateTime $end)``` Updates your
+```QueryBuilder``` and returns the same ```QueryBuilder``` object with added join and where clause.
+> Note: ```$join``` is ```array('field', 'alias')```
+
+---
+
+``` whereAvailableForDate(QueryBuilder $queryBuilder, $join, \DateTime $date)``` Updates your
+```QueryBuilder``` and returns the same ```QueryBuilder``` object with added join and where clause.
+> Note: ```$join``` is ```array('field', 'alias')```
+
+---
+
+``` book($item, \DateTime $start, \DateTime $end) ``` Books your item returns ```Entity | false``` (```Entity```
+on success, ```false``` on failure)
