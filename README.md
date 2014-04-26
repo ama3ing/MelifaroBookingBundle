@@ -135,7 +135,7 @@ Where
 
 ```item``` - is object of your bookable item
 
-```now```  -  is any date allowed for \DateTime::__construct()
+```now```  -  is any date allowed for ```\DateTime::__construct()```
 
 ```4```    -  number of months to be rendered after desired date
 
