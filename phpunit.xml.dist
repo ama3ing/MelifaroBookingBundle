@@ -6,6 +6,10 @@
         </testsuite>
     </testsuites>
 
+    <php>
+        <server name="KERNEL_DIR" value="/Tests/Fixtures/app/" />
+    </php>
+
     <filter>
         <whitelist>
             <directory>./</directory>

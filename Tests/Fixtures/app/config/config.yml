@@ -1,0 +1,29 @@
+parameters:
+  locale: en
+  secret: ThisTokenIsNotSoSecretChangeIt
+
+framework:
+  test: ~
+  templating: { engines: ['php', 'twig'] }
+  session:
+      storage_id: session.storage.mock_file
+
+  secret: %secret%
+  router: { resource: "%kernel.root_dir%/config/routing.yml" }
+  default_locale: %locale%
+
+doctrine:
+  dbal:
+      driver: pdo_mysql
+      host: 127.0.0.1
+      port: ~
+      dbname: melifarobooking
+      user: travis
+      password: ~
+      charset: UTF8
+  orm:
+    auto_generate_proxy_classes: "%kernel.debug%"
+    auto_mapping: true
+
+melifaro_booking:
+  entity_class: Melifaro\BookingBundle\Tests\Fixtures\ORM\Booking
