@@ -96,7 +96,9 @@ public function bookingAction()
 }
 ```
 
-Booker Service has following methods: ``` isAvailableForPeriod($item, \DateTime $start, \DateTime $end) ``` Checks is your item available for period,
+#### Booker Service has following methods:
+
+``` isAvailableForPeriod($item, \DateTime $start, \DateTime $end) ``` Checks is your item available for period,
 returns ```boolean```
 
 ---
