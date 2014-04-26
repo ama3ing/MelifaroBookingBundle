@@ -1,0 +1,13 @@
+parameters:
+  cf_booking.entity_class: ~
+
+services:
+  cf_booking:
+    class: Cf\BookingBundle\DomainCommand\Booking
+    arguments: [%cf_booking.entity_class%, @doctrine]
+
+  cf_booking_calendar:
+    class: Cf\BookingBundle\Twig\CalendarExtension
+    arguments: [%cf_booking.entity_class%, @doctrine]
+    tags:
+      - {name: twig.extension}
