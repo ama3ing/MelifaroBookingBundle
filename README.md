@@ -141,4 +141,6 @@ Where
 Template can be overridden as usual in Symfony 2 application.
 Just create following directory structure:
 
-```app/Resources/views/MelifaroBookingBundle/Calendar/month.html.twig```
+```
+app/Resources/views/MelifaroBookingBundle/Calendar/month.html.twig
+```
