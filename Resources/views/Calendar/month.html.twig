@@ -11,8 +11,7 @@
         {% set last_day = days_current~"." ~ (month | date('F Y')) %}
         {% set start_day_of_current = first_day | date("N") %}
         {% set end_day_of_current = last_day | date("N") %}
-        <div class="col-md-4 col-sm-6 cf-booking-calendar-wrap">
-        <table class="cf-booking-calendar table table-bordered">
+        <table class="cf-booking-calendar">
             <tr class="cf-booking-calendar-m">
                 <th colspan="7">{{ month | date("F Y") }}</th>
             </tr>
@@ -61,6 +60,5 @@
                 {% endif %}
             {% endfor %}
         </table>
-    </div>
     {% endfor %}
 {% endspaceless %}

@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('cf_booking')
+        $rootNode = $treeBuilder->root('melifaro_booking')
         ->children()
             ->scalarNode('entity_class')
             ->isRequired()

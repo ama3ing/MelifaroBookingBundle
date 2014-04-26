@@ -38,7 +38,7 @@ class CalendarExtension extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            new \Twig_SimpleFunction('cf_booking_calendar', array($this, 'renderCalendar'), array('is_safe'=>array('html')))
+            new \Twig_SimpleFunction('melifaro_booking_calendar', array($this, 'renderCalendar'), array('is_safe'=>array('html')))
         );
     }
 
@@ -89,6 +89,6 @@ class CalendarExtension extends \Twig_Extension
 
     public function getName()
     {
-        return 'cf_booking_bundle_calendar';
+        return 'melifaro_booking_bundle_calendar';
     }
 } 

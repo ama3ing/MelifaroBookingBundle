@@ -1,6 +1,6 @@
 <?php
 
-namespace Melifaro\BookingBundle\DomainCommand;
+namespace Melifaro\BookingBundle\Helper;
 
 use Doctrine\Bundle\DoctrineBundle\Registry;
 use Doctrine\ORM\QueryBuilder;

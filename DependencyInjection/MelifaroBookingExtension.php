@@ -1,6 +1,6 @@
 <?php
 
-namespace Cf\BookingBundle\DependencyInjection;
+namespace Melifaro\BookingBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class CfBookingExtension extends Extension
+class MelifaroBookingExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -26,7 +26,7 @@ class CfBookingExtension extends Extension
         $loader->load('services.yml');
 
         $container->setParameter(
-            'cf_booking.entity_class',
+            'melifaro_booking.entity_class',
             $config['entity_class']
         );
     }
