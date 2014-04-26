@@ -127,9 +127,11 @@ class Booking
             $manager = $this->doctrine->getManager();
             $manager->persist($entity);
             $manager->flush();
+
+            return $entity;
         }
 
-        return $entity;
+        return false;
     }
 
 } 

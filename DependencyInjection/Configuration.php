@@ -18,12 +18,12 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('melifaro_booking')
-        ->children()
-            ->scalarNode('entity_class')
-            ->isRequired()
-            ->end()
-        ->end();
+        $treeBuilder->root('melifaro_booking')
+            ->children()
+                ->scalarNode('entity_class')
+                ->isRequired()
+                ->end()
+            ->end();
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
