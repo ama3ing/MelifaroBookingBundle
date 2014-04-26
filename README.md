@@ -18,7 +18,7 @@ Download the bundle:
 ```bash
 $ php composer.phar require "melifaro/booking-bundle:dev-master"
 ```
-Add it to your Kernel:
+### 2. Add it to your Kernel:
 
 ```php
 <?php
@@ -35,7 +35,7 @@ public function registerBundles()
     );
 }
 ```
-### Create your entity
+### 3. Create your entity
 
 #### Doctrine ORM
 Bundle has all necessary mappings for your entity. Just create your entity class and extend it from
