@@ -121,3 +121,24 @@ returns ```boolean```
 
 ``` book($item, \DateTime $start, \DateTime $end) ``` Books your item returns ```Entity | false``` (```Entity```
 on success, ```false``` on failure)
+
+Calendar Twig Extension
+-----------------------
+
+Bundle also provides cool Twig extension. To use it in your template just try following:
+
+```twig
+{{ melifaro_booking_calendar(item, "now", 4) }}
+```
+
+Where
+```item``` - is object of your bookable item
+```now```  -  is any date allowed for \DateTime::__construct()
+```4```    -  number of months to be rendered after desired date
+
+### Overriding template
+
+Template can be overridden as usual in Symfony 2 application.
+Just create following directory structure:
+
+```app/Resources/views/MelifaroBookingBundle/Calendar/month.html.twig```
