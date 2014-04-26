@@ -44,4 +44,12 @@
   42 => 'Doctrine\\Common\\Persistence\\Proxy',
   43 => 'Doctrine\\Common\\Util\\ClassUtils',
   44 => 'Doctrine\\Bundle\\DoctrineBundle\\Registry',
+  45 => 'Twig_Environment',
+  46 => 'Twig_Extension',
+  47 => 'Twig_Extension_Core',
+  48 => 'Twig_Extension_Escaper',
+  49 => 'Twig_Extension_Optimizer',
+  50 => 'Twig_LoaderInterface',
+  51 => 'Twig_Markup',
+  52 => 'Twig_Template',
 );

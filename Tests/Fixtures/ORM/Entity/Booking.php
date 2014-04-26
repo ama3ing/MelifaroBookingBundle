@@ -25,7 +25,7 @@ class Booking extends BaseClass
     /**
      * @var \Melifaro\BookingBundle\Tests\Fixtures\ORM\Entity\BookableItem
      *
-     * @ORM\ManyToOne(targetEntity="Property", inversedBy="bookings")
+     * @ORM\ManyToOne(targetEntity="BookableItem", inversedBy="bookings")
      * @ORM\JoinColumn(name="property_id", referencedColumnName="id")
      */
     protected $item;

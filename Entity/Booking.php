@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Booking
- *
+ * @codeCoverageIgnore
  * @ORM\MappedSuperclass
  */
 abstract class Booking

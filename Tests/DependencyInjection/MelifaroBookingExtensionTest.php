@@ -11,7 +11,7 @@ use Melifaro\BookingBundle\DependencyInjection\MelifaroBookingExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 /**
  * @covers Melifaro\BookingBundle\DependencyInjection\Configuration
- * @covers Melifaro\BookingBundle\DependencyInjection\LiipImagineExtension
+ * @covers Melifaro\BookingBundle\DependencyInjection\MelifaroBookingExtension
  */
 class MelifaroBookingExtensionTest extends \PHPUnit_Framework_TestCase
 {

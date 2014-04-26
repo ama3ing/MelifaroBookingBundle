@@ -6,7 +6,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 /**
  * Class Booking
  * @package Melifaro\BookingBundle\Document
-
+ * @codeCoverageIgnore
  * @ODM\MappedSuperClass
  */
 abstract class Booking

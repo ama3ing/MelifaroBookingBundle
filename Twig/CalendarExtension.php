@@ -1,6 +1,6 @@
 <?php
 
-namespace Cf\BookingBundle\Twig;
+namespace Melifaro\BookingBundle\Twig;
 
 use Doctrine\Bundle\DoctrineBundle\Registry;
 

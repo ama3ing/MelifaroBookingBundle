@@ -23,7 +23,14 @@ doctrine:
       charset: UTF8
   orm:
     auto_generate_proxy_classes: "%kernel.debug%"
-    auto_mapping: true
+    auto_mapping: false
+    mappings:
+      default:
+        type: annotation
+        dir: %kernel.root_dir%/../ORM/Entity
+        alias: MelifaroBookingBundle
+        prefix: Melifaro\BookingBundle\Tests\Fixtures\ORM\Entity
+        is_bundle: false
 
 melifaro_booking:
-  entity_class: Melifaro\BookingBundle\Tests\Fixtures\ORM\Booking
+  entity_class: Melifaro\BookingBundle\Tests\Fixtures\ORM\Entity\Booking

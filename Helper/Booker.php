@@ -90,10 +90,12 @@ class Booker
     public function whereAvailableForPeriod(QueryBuilder $queryBuilder, $join, \DateTime $start, \DateTime $end)
     {
         $queryBuilder->leftJoin($join['field'], $join['alias'])
-            ->where('b.start >= :start AND b.end <= :end')
-            ->orWhere('b.start <= :start AND b.end >= :end')
-            ->orWhere('b.start <= :start AND b.end >= :end AND b.start <= :end')
-            ->orWhere('b.start >= :start AND b.end <= :end AND b.end >= :start')
+            ->where($join['alias'].'.start >= :start AND '.$join['alias'].'.end <= :end')
+            ->orWhere($join['alias'].'.start <= :start AND '.$join['alias'].'.end >= :end')
+            ->orWhere($join['alias'].'.start <= :start AND '.$join['alias'].'.end >= :end AND '.
+                $join['alias'].'.start <= :end')
+            ->orWhere($join['alias'].'.start >= :start AND '.$join['alias'].'.end <= :end AND '.
+                $join['alias'].'.end >= :start')
 
             ->setParameters(array(
                 'start'=> $start,
@@ -117,7 +119,7 @@ class Booker
 
     public function book($item, \DateTime $start, \DateTime $end)
     {
-        if($this->isAvailable($item, $start, $end)) {
+        if($this->isAvailableForPeriod($item, $start, $end)) {
 
             $entity = new $this->entity;
             $entity->setStart($start);
