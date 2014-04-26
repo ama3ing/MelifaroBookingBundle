@@ -5,7 +5,7 @@ namespace Melifaro\BookingBundle\Helper;
 use Doctrine\Bundle\DoctrineBundle\Registry;
 use Doctrine\ORM\QueryBuilder;
 
-class Booking
+class Booker
 {
     /**
      * @var \Doctrine\Bundle\DoctrineBundle\Registry

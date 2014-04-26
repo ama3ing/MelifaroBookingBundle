@@ -3,7 +3,7 @@ parameters:
 
 services:
   booker:
-    class: Melifaro\BookingBundle\Helper\Booking
+    class: Melifaro\BookingBundle\Helper\Booker
     arguments: [%melifaro_booking.entity_class%, @doctrine]
 
   booking_calendar:
