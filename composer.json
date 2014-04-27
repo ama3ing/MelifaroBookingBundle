@@ -20,7 +20,7 @@
         "symfony/framework-bundle": "~2.3",
         "twig/twig": "~1.5",
         "twig/extensions": "~1.0",
-        "symfony/browser-kit": "2.4.*@dev",
+        "symfony/browser-kit": "~2.3",
         "doctrine/orm": ">=2.2,<2.5-dev",
         "doctrine/doctrine-bundle": "~1.1"
     },
