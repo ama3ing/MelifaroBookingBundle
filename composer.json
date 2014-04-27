@@ -18,10 +18,10 @@
         "symfony/filesystem": "~2.3",
         "symfony/options-resolver": "~2.3",
         "symfony/framework-bundle": "~2.3",
-        "symfony/twig-bundle": "2.3~",
+        "symfony/twig-bundle": "~2.3",
+        "symfony/browser-kit": "~2.3",
         "twig/twig": "~1.5",
         "twig/extensions": "~1.0",
-        "symfony/browser-kit": "~2.3",
         "doctrine/orm": ">=2.2,<2.5-dev",
         "doctrine/doctrine-bundle": "~1.1"
     },
