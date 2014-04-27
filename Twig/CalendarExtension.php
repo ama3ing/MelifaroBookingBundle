@@ -75,7 +75,7 @@ class CalendarExtension extends \Twig_Extension
             ->getResult();
         ;
 
-        return $this->environment->render('CfBookingBundle:Calendar:month.html.twig', array(
+        return $this->environment->render('MelifaroBookingBundle:Calendar:month.html.twig', array(
             'bookings'=>$bookings,
             'start' => $start,
             'months'=>$months
