@@ -1,12 +1,15 @@
 # .scrutinizer.yml
 imports:
     - php
+    
+before_commands:
+    - "composer self-update"
+    - "composer install --prefer-source"
 
 filter:
     excluded_paths: [vendor/*, tests/*, bin/*]
 
 tools:
-# php_sim: true
     php_mess_detector: true
     php_cs_fixer: true
     php_analyzer: true
