@@ -21,7 +21,6 @@ class LoadBookingData extends AbstractFixture implements OrderedFixtureInterface
         $booking->setStart(new \DateTime('2014-05-01'));
         $booking->setEnd(new \DateTime('2014-05-09'));
 
-
         $manager->persist($booking);
         $manager->flush();
     }
@@ -30,4 +29,4 @@ class LoadBookingData extends AbstractFixture implements OrderedFixtureInterface
     {
         return 1;
     }
-} 
+}

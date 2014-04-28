@@ -31,7 +31,7 @@ class Booking extends BaseClass
     protected $item;
 
     /**
-     * @param \Melifaro\BookingBundle\Tests\Fixtures\ORM\Entity\BookableItem $item
+     * @param  \Melifaro\BookingBundle\Tests\Fixtures\ORM\Entity\BookableItem $item
      * @return $this
      */
     public function setItem($item)
@@ -48,4 +48,4 @@ class Booking extends BaseClass
     {
         return $this->item;
     }
-} 
+}

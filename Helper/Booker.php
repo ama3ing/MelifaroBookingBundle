@@ -23,7 +23,7 @@ class Booker
     private $entity;
 
     /**
-     * @param string $entity
+     * @param string   $entity
      * @param Registry $doctrine
      */
     public function __construct($entity, Registry $doctrine)
@@ -35,8 +35,8 @@ class Booker
 
     /**
      * @param $item
-     * @param \DateTime $start
-     * @param \DateTime $end
+     * @param  \DateTime $start
+     * @param  \DateTime $end
      * @return bool
      */
     public function isAvailableForPeriod($item, \DateTime $start, \DateTime $end)
@@ -64,7 +64,7 @@ class Booker
 
     /**
      * @param $item
-     * @param \DateTime $date
+     * @param  \DateTime $date
      * @return bool
      */
     public function isAvailableForDate($item, \DateTime $date)
@@ -84,8 +84,8 @@ class Booker
     /**
      * @param QueryBuilder $queryBuilder
      * @param $join array(field, alias)
-     * @param \DateTime $start
-     * @param \DateTime $end
+     * @param \DateTime    $start
+     * @param \DateTime    $end
      */
     public function whereAvailableForPeriod(QueryBuilder $queryBuilder, $join, \DateTime $start, \DateTime $end)
     {
@@ -107,7 +107,7 @@ class Booker
     /**
      * @param QueryBuilder $queryBuilder
      * @param $join
-     * @param \DateTime $date
+     * @param \DateTime    $date
      */
     public function whereAvailableForDate(QueryBuilder $queryBuilder, $join, \DateTime $date)
     {
@@ -119,7 +119,7 @@ class Booker
 
     public function book($item, \DateTime $start, \DateTime $end)
     {
-        if($this->isAvailableForPeriod($item, $start, $end)) {
+        if ($this->isAvailableForPeriod($item, $start, $end)) {
 
             $entity = new $this->entity;
             $entity->setStart($start);
@@ -136,4 +136,4 @@ class Booker
         return false;
     }
 
-} 
+}

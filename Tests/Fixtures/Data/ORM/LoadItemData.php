@@ -21,4 +21,4 @@ class LoadItemData extends AbstractFixture implements OrderedFixtureInterface
     {
         return 0;
     }
-} 
+}

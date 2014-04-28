@@ -17,7 +17,7 @@ abstract class Booking
      *
      * @ORM\Column(name="start", type="date")
      */
-    protected  $start;
+    protected $start;
 
     /**
      * @var \DateTime
@@ -26,11 +26,10 @@ abstract class Booking
      */
     protected $end;
 
-
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -40,7 +39,7 @@ abstract class Booking
     /**
      * Set start
      *
-     * @param \DateTime $start
+     * @param  \DateTime $start
      * @return Booking
      */
     public function setStart($start)
@@ -53,7 +52,7 @@ abstract class Booking
     /**
      * Get start
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getStart()
     {
@@ -63,7 +62,7 @@ abstract class Booking
     /**
      * Set end
      *
-     * @param \DateTime $end
+     * @param  \DateTime $end
      * @return Booking
      */
     public function setEnd($end)
@@ -76,15 +75,14 @@ abstract class Booking
     /**
      * Get end
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getEnd()
     {
         return $this->end;
     }
 
+    abstract public function getItem();
 
-    public abstract function getItem();
-
-    public abstract function setItem($item);
+    abstract public function setItem($item);
 }

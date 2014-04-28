@@ -5,7 +5,6 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 
-
 class AppKernel extends Kernel
 {
     /**
@@ -30,4 +29,4 @@ class AppKernel extends Kernel
     {
         $loader->load(__DIR__ . '/config/config.yml');
     }
-} 
+}

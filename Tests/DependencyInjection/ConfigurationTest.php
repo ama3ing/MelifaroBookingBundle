@@ -50,7 +50,7 @@ class ConfigurationTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @param ConfigurationInterface $configuration
-     * @param array $configs
+     * @param array                  $configs
      *
      * @return array
      */
@@ -61,4 +61,3 @@ class ConfigurationTest extends \PHPUnit_Framework_TestCase
         return $processor->processConfiguration($configuration, $configs);
     }
 }
- 

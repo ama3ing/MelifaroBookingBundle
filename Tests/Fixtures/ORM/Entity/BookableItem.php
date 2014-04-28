@@ -22,7 +22,6 @@ class BookableItem
      */
     protected $id;
 
-
     /**
      * @ORM\OneToMany(targetEntity="Booking", mappedBy="item")
      */
@@ -48,7 +47,6 @@ class BookableItem
         return $this;
     }
 
-
     public function removeBooking($booking)
     {
         $this->bookings->removeElement($booking);
@@ -58,4 +56,4 @@ class BookableItem
     {
         return $this->bookings;
     }
-} 
+}

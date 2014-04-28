@@ -40,7 +40,6 @@ class BookerTest extends WebTestCase
         $this->assertInstanceOf('Melifaro\BookingBundle\Helper\Booker', $this->container->get('booker'));
     }
 
-
     /**
      * @dataProvider multipleDatesProvider
      */
@@ -120,8 +119,7 @@ class BookerTest extends WebTestCase
 
         $this->assertEquals($expected, $result instanceof Booking);
 
-
-        if($result instanceof Booking) {
+        if ($result instanceof Booking) {
             $manager = $this->container->get('doctrine')->getManager();
             $manager->remove($result);
             $manager->flush();
@@ -149,4 +147,3 @@ class BookerTest extends WebTestCase
         );
     }
 }
- 

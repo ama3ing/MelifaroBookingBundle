@@ -58,4 +58,3 @@ class CalendarExtensionTest extends WebTestCase
         $this->assertTrue(count($functions) > 0);
     }
 }
- 

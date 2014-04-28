@@ -67,4 +67,4 @@ class MelifaroBookingExtensionTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf('Symfony\Component\DependencyInjection\ContainerBuilder', $this->containerBuilder);
     }
-} 
+}

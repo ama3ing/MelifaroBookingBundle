@@ -23,7 +23,7 @@ class CalendarExtension extends \Twig_Extension
     private $environment;
 
     /**
-     * @param string $entity
+     * @param string   $entity
      * @param Registry $doctrine
      */
     public function __construct($entity, Registry $doctrine)
@@ -44,14 +44,14 @@ class CalendarExtension extends \Twig_Extension
 
     /**
      * @param $item
-     * @param string $start
-     * @param int $months
+     * @param  string                    $start
+     * @param  int                       $months
      * @return string
      * @throws \InvalidArgumentException
      */
     public function renderCalendar($item, $start = 'now', $months = 1)
     {
-        if(intval($months) === 0) {
+        if (intval($months) === 0) {
             throw new \InvalidArgumentException('Month number should be integer');
         }
         $now = new \DateTime($start);
@@ -91,4 +91,4 @@ class CalendarExtension extends \Twig_Extension
     {
         return 'melifaro_booking_bundle_calendar';
     }
-} 
+}
