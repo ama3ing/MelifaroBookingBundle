@@ -18,7 +18,7 @@ Prefered way to install this bundle is using [composer](http://getcomposer.org)
 
 Download the bundle:
 ```bash
-$ php composer.phar require "melifaro/booking-bundle:dev-master"
+$ php composer.phar require "melifaro/melifaro-booking-bundle:dev-master"
 ```
 ### 2. Add it to your Kernel:
 
