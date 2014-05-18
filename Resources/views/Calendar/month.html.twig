@@ -3,7 +3,7 @@
         {% if i == 1 %}
             {% set month = start %}
         {% else %}
-            {% set month = "+"~(i-1)~"month" %}
+            {% set month = (start | date) ~ " + "~(i-1)~"month" %}
         {% endif %}
 
         {% set days_current = month | date('t') %}
