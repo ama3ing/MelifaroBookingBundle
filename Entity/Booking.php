@@ -15,14 +15,14 @@ abstract class Booking
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="start", type="date")
+     * @ORM\Column(name="start_date", type="date")
      */
     protected $start;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="end", type="date")
+     * @ORM\Column(name="end_date", type="date")
      */
     protected $end;
 
