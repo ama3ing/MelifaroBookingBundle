@@ -7,8 +7,6 @@ MelifaroBookingBundle
 -------------
 
 
-Proudly supported by [apps developers](http://appsdevelopers.eu)
-
 
 Booking Bundle for Symfony 2 Applications. Bundle provides some useful functionality for handling bookings
 on your website.
